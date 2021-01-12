@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fourmies connect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--    <script src="https://kit.fontawesome.com/b3c591f1b4.js" crossorigin="anonymous"></script>-->
+</head>
+<body>
+<header>
+    <img id="logo" src="logoFourmiesNoir.png" alt="logo" height="299" width="303"/>
+    <div id="e-name">Fourmies Connect</div>
+    <div id="partners">
+        <img id="upto" src="logoUPTO.png" alt="logo de UPTO" height="209" width="491"/>
+        <img id="face" src="logoFace.png" alt="logo de Face Thièrache" height="159" width="350"/>
+    </div>
+</header>
+
+<section>
+    <article>
+        <h1>Vous étes commerçant(e) de la communauté de commune de Fourmies ?</h1>
+        <div>
+            <p>
+                Dans le contexte particulier d'épidémie de Covid <!-- et dans le cadre de la promotion des technologies du
+                    numérique -->, Face Thiérache, UPTO et les élèves de l'école du numérique se proposent d'aider les
+                commerçant(e)s de la communauté de commune à développer leur activité sur internet.
+            </p>
+            <p>
+                Vous désirez avoir votre propre site internet mais vous n'avez pas la motivation,
+                les moyens ou le temps de vous lancez seul(e) dans l'aventure ?
+            </p>
+            <p>
+                Nous proposons créer <span class="bold">GRATUITEMENT</span> un site personnalisé pour votre commerce.
+            </p>
+            <p>
+                Que vous soyez déjà intéressé ou que vous ayez seulement une question, remplissez simplement notre formulaire
+                d'inscription.
+            </p>
+            <p>A bientôt sur notre plateforme.</p>
+            <p class="bold">Face Thiérache - UPTO</p>
+        </div>
+    </article>
+
+    <div id="inscription">
+        <div id="titreForm">
+            <span class="bold">Inscription</span>
+        </div>
+        <!--            formulaire personne     -->
+        <form action="infoUser.php" method="post">
+            <!--                info sur la personne-->
+            <fieldset>
+                <legend class="bold">Vous :</legend>
+                <div id="perso">
+                    <div class="ref">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="user-name" placeholder="nom">
+                    </div>
+                    <div class="ref">
+                        <label for="surname">Prénom</label>
+                        <input type="text" id="surname" name="surname" placeholder="prénom">
+                    </div>
+                </div>
+                <div id="phone">
+                    <div class="ref">
+                        <label for="tel">fixe</label>
+                        <input type="tel" id="tel" name="telFixe">
+                    </div>
+                    <div class="ref">
+                        <label for="mob">portable</label>
+                        <input type="tel" id="mob" name="telMobil">
+                    </div>
+                </div>
+            </fieldset>
+            <!--                infos entreprise        -->
+            <fieldset>
+                <legend class="bold">Votre entreprise :</legend>
+                <div class="ref">
+                    <label for="shop">Nom du commerce</label>
+                    <input type="text" id="shop" name="shop" placeholder="raison sociale">
+                </div>
+                <div class="ref">
+                    <label for="siren">siren</label>
+                    <input type="text" id="siren" placeholder="9 chiffres">
+                </div>
+                <p class="bold">Adresse</p>
+                <div class="ref">
+                    <label for="num">N°</label>
+                    <input type="text" id="num" name="num">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</section>
+<footer></footer>
+</body>
+</html>

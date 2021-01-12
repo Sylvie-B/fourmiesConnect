@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+}
+
+header, footer{
+    background-color: #41aea9;
+    padding : 1vh 1vw 1vh 1vw;
+}
+
+header{
+    font-family: 'Ubuntu Mono', monospace;
+    display: flex;
+    justify-content: space-between;
+}
+
+#e-name{
+    font-size: 5rem;
+    margin-bottom: 1vh;
+    align-self: flex-end;
+}
+
+#logo{
+    width: 12%;
+    height: auto;
+}
+
+#partners{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#partners, #upto, #face{
+    width: 10vw;
+}
+
+#upto, #face{
+    background-color: white;
+    height: auto;
+    margin-bottom: 1vh;
+}
+
+
+section{
+    background-color: #a6f6f1;
+    padding: 4rem;
+    display: flex;
+}
+
+article{
+    width: 45%;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+article div, h1, #titreForm{
+    background-color: #e8ffff;
+}
+
+article div{
+    padding: 1rem;
+}
+
+article div p{
+    margin: auto;
+    padding: 1rem;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#inscription{
+    width: 45%;
+    margin: auto;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#titreForm{
+    text-align: center;
+    font-size: 2rem;
+}
+
+fieldset{
+    margin-top: 2rem;
+    padding: 1rem;
+    border-color: black;
+}
+
+.ref{
+    margin: 1vw 0 1vw 0;
+}
+
+#perso, #phone{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    background-size: contain;
+    background-repeat: space;
+    height: 13rem;
+}
+
+@media screen and (max-width: 600px) {
+
+}
