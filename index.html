@@ -8,6 +8,7 @@
     <!--    <script src="https://kit.fontawesome.com/b3c591f1b4.js" crossorigin="anonymous"></script>-->
 </head>
 <body>
+<!--logo - nom du site - logo upto et face-->
 <header>
     <img id="logo" src="logoSite.png" alt="logo" height="299" width="303"/>
     <div id="e-name">Fourmies Connect</div>
@@ -16,7 +17,7 @@
         <img id="face" src="logoFace.png" alt="logo de Face Thièrache" height="159" width="350"/>
     </div>
 </header>
-
+<!--explications-->
 <section>
     <article>
         <h1>Vous étes commerçant(e) de la communauté de commune de Fourmies ?</h1>
@@ -41,52 +42,59 @@
             <p class="bold">Face Thiérache - UPTO</p>
         </div>
     </article>
-
+<!--inscription-->
     <div id="inscription">
         <div id="titreForm">
-            <span class="bold">Inscription</span>
+<!--            <span class="bold">Inscription</span>-->
         </div>
-        <!--            formulaire personne     -->
+<!--            formulaire personne     -->
         <form action="infoUser.php" method="post">
-            <!--                info sur la personne-->
-            <fieldset>
+<!--                info sur la personne-->
+            <fieldset id="user">
                 <legend class="bold">Vous :</legend>
                 <div id="perso">
-                    <div class="ref">
+                    <div>
                         <label for="name">Nom</label>
-                        <input type="text" id="name" name="user-name" placeholder="nom">
+                        <input type="text" id="name" name="user-name">
                     </div>
-                    <div class="ref">
+                    <div>
                         <label for="surname">Prénom</label>
-                        <input type="text" id="surname" name="surname" placeholder="prénom">
+                        <input type="text" id="surname" name="surname">
                     </div>
                 </div>
                 <div id="phone">
-                    <div class="ref">
+                    <div>
                         <label for="tel">fixe</label>
                         <input type="tel" id="tel" name="telFixe">
                     </div>
-                    <div class="ref">
+                    <div>
                         <label for="mob">portable</label>
                         <input type="tel" id="mob" name="telMobil">
                     </div>
                 </div>
             </fieldset>
-            <!--                infos entreprise        -->
-            <fieldset>
+<!--                infos entreprise        -->
+            <fieldset id="business">
                 <legend class="bold">Votre entreprise :</legend>
-                <div class="ref">
+                <div>
                     <label for="shop">Nom du commerce</label>
                     <input type="text" id="shop" name="shop" placeholder="raison sociale">
                 </div>
-                <div class="ref">
+                <div>
                     <label for="siren">siren</label>
                     <input type="text" id="siren" placeholder="9 chiffres">
                 </div>
+<!--                adresse de l'entreprise -->
                 <p class="bold">Adresse</p>
-                <div class="ref">
-                    <label for="num">N°</label>
-                    <input type="text" id="num" name="num">
+                <div id="adress">
+                    <div>
+                        <label for="num">N°</label>
+                        <input type="text" id="num" name="num">
+                    </div>
+                    <div>
+                        <label for="street">rue</label>
+                        <input type="text" id="street" name="user-street">
+                    </div>
                 </div>
             </fieldset>
         </form>

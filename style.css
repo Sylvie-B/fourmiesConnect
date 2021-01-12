@@ -8,6 +8,7 @@
 
 html {
     font-size: 62.5%;
+    font-family: sans-serif;
 }
 
 body {
@@ -43,7 +44,7 @@ header{
 }
 
 #partners, #upto, #face{
-    width: 10vw;
+    width: 11vw;
 }
 
 #upto, #face{
@@ -51,7 +52,6 @@ header{
     height: auto;
     margin-bottom: 1vh;
 }
-
 
 section{
     background-color: #a6f6f1;
@@ -61,7 +61,7 @@ section{
 
 article{
     width: 45%;
-    margin: auto;
+    margin: 1vh auto;
     font-size: 1.5rem;
 }
 
@@ -108,21 +108,31 @@ fieldset{
     border-color: black;
 }
 
-.ref{
-    margin: 1vw 0 1vw 0;
+fieldset div {
+    margin: 0.5vw 0;
 }
 
-#perso, #phone{
+#user input {
+    width: 15rem;
+}
+
+#perso, #phone, #adress{
     display: flex;
     justify-content: space-between;
 }
 
 footer{
-    background-size: contain;
-    background-repeat: space;
     height: 13rem;
 }
 
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 900px) {
+    section {
+        flex-direction: column;
+    }
+    article {
+        width: 100%;
+    }
+    #inscription {
+        width: 100%;
+    }
 }
